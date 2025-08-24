@@ -1,0 +1,76 @@
+.summary-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+}
+
+.summary-title {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.summary-empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 15px 0;
+}
+
+/* Table */
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  table-layout: fixed;   /* keeps spacing consistent */
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 14px 16px;
+  text-align: center;    
+  vertical-align: middle;
+  border-bottom: 1px solid #e0e0e0;
+  word-wrap: break-word;
+  margin-left: 10px;
+}
+
+.summary-table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.summary-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.summary-table tbody tr:hover {
+  background-color: #eef6ff;
+  transition: background 0.3s ease;
+}
+
+/* Status column */
+.summary-table td:last-child {
+  min-width: 120px;  /* give breathing space */
+  text-align: center; /* ✅ ensure centered */
+}
+
+/* Status colors */
+.active {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.stopped {
+  color: #dc3545;
+  font-weight: 600;
+}
