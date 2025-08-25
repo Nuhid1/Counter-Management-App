@@ -12,7 +12,7 @@ const Summary = ({ summary }) => {
           <thead>
             <tr>
               <th>Name</th>
-              <th>Current Token </th>
+              <th>Generated Tokens </th>
               <th>Served Tokens</th>
               <th>Status</th>
             </tr>
