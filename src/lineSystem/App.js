@@ -5,6 +5,7 @@ import InputCounter from "./components/input counter/InputCounter";
 import TokenGenerate from "./components/token generate/TokenGenerate";
 import CounterGenerate from "./components/Counter/CounterGenerate";
 import Summary from "./components/summary/Summary";
+import Faqs from "./components/FAQ/Faqs";
 
 function App() {
   
@@ -91,6 +92,7 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <header>
         <h1> Counter Management System</h1>
@@ -111,9 +113,14 @@ function App() {
       <div>
         <Summary summary={summary} />
       </div>
-
+     
+      <div>
+        <Faqs />
+      </div> 
+     
     </div>
-  );
+   );
+  
 }
 
 export default App;
