@@ -5,7 +5,7 @@ import Faq from './Faq';
 import style from './faq.module.css'
 
 const Faqs = () => {
-  const [faq,setFaq] = useState (faqData);
+  const [faq] = useState (faqData);
   return (
   <main className={style.container} > 
     <section className={style.faqs} >
