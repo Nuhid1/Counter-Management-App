@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+import { ToastContainer, toast } from 'react-toastify';
 import { v4 as uuidv4 } from "uuid";
 import style from './InputCounter.module.css'
 
@@ -21,6 +23,7 @@ const handleChange = (event) => {
 };
       
  const handleSubmit = (event) => {
+  toast("Counter: ( "+ counter.name+ ") added");
   event.preventDefault();
   const newCounter = { ...counter, id: uuidv4() };
 
@@ -39,7 +42,7 @@ const handleChange = (event) => {
             <input type='text' id='id' name='name' value={counter.name}  onChange={(name)=> handleChange(name)} />
         </div>
         <button type='submit'>Add  </button>
-       
+        <ToastContainer />
       </form>
   )
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+
+
 import "./App.css" 
 import InputCounter from "./components/input counter/InputCounter";
 import TokenGenerate from "./components/token generate/TokenGenerate";
@@ -80,16 +82,20 @@ function App() {
 
   const deleteCounter = (id)=>{
     setSummary ((prev)=>(
+
     prev.map((counter)=>(
       counter.id === id ? { 
             ...counter, status: "Deleted" } : counter 
     ))
     ))
-    setCounter ((prev)=>
-      counter.filter((counter)=> counter.id !== id ) 
-      )
+
+    setCounter ((prev)=>{
+    return prev.filter((c) => c.id !== id);
+  });
+
+  };
     
-  }
+  
 
   return (
     
