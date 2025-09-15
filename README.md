@@ -1,6 +1,6 @@
 # Counter Management System
 
-[Live Demo](https://countermanagementsystem.netlify.app/)
+[Click for Live Demo](https://countermanagementsystem.netlify.app/)
 
 ## Description
 
