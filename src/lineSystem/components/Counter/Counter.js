@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import style from './counter.module.css'
 
 const Counter = (props) => {
