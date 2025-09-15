@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { ToastContainer, toast } from 'react-toastify';
 import style from './counter.module.css'
 
 const Counter = (props) => {
@@ -8,6 +9,7 @@ const Counter = (props) => {
 
     const handleDelete = ()=>{
       props.deleteCounter(id);
+      toast(`Counter (${name}) Deleted`);
     }
   return (
      <div key={id} className={style["counters-card"]}>
